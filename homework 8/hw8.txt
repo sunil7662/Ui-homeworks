@@ -1,0 +1,52 @@
+HomeWork 8:
+1.why we use java script?
+  --JavaScript is a programming language that is run by most modern browsers. It supports object-oriented programming and procedural programming. It can be used to control web pages on the client side of the browser, server-side programs, and even mobile applications.
+ -- javascript is easy to implement.
+ -- JavaScript makes web pages more dynamic by allowing users to interact with web pages, click on elements, and change the pages.
+
+ 
+2.what is dom manipulation?
+ --Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.
+ --JavaScript can change all the HTML elements,html attributes,CSS styles in a page.
+ --Js can remove existing html elements and attributes.
+ -- Can also add new elements and attributes.
+ -- can create new events and react to the existing events in the page.
+
+
+3. what are events in a web page? how can you recognize them?
+ --Events occur when some sort of interaction takes place in a web page. This can be the end user clicking on something, moving the mouse over a certain element or pressing down certain keys on the keyboard. An event can also be something that happens in the web browser, such as the web page completing the loading of a page, or the user scrolling or resizing the window.
+ --Through the use of JavaScript, we can detect when certain events happen, and cause things to occur in response to those events.
+ -- they are two types of event order.
+      1.event capturing
+      2. event bubbling.
+
+
+4.java script data types?
+javascript ha stwo types of datatypes. they are
+1. primitive data types
+	string,number,boolean,undefined&null
+2. non-primitive data types
+	object,array&regexp
+var x = "sunil";      // Now x is a String
+var x = 5;           // Now x is a Number
+var x = true;		 // now x is boolean
+var x = false;       // now x is boolean
+var x;               // Now x is undefined
+var x = null;        // Value is null, but type is still an object
+var name = ["sunil","reddy","kotala"]    // name is array
+var person = {firstName:"sunil", lastName:"kotala", age:23};             // person is the object
+
+
+5. conditions and loops
+  --if
+  --else
+  --elseif
+  --switch
+  --for loop
+  -- while
+  -- do while
+  -- break statement
+  --continue statement
+
+
+  references-- study.com,w3schools,about.com,html5doctor.com,wikipedia,javatpoint.com,MSDN
