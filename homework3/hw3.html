@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*p{
+	background-color: green;  //Select and style all <p> elements
+}
+*{
+	background-color: #ccc;  //Select all elements, and set their background color to gray.
+}
+.intro{
+	background-color: red;  //Select and style all elements with class="intro"
+}
+#fname {
+    background-color: yellow;  //Style the element with id="firstname"
+}
+h1,p{
+	background-color: red;   //Select and style all <h1> elements AND all <p> elements
+} 
+div p{
+	background-color: yellow;  //Select and style every <p> element that is inside <div> elements
+}
+div > p { 
+    background-color: yellow;  //Select and style every <p> element where the parent is a <div> element
+}
+div + p { 
+    background-color: yellow;  //Select and style every <p> element that are placed immediately after <div> elements
+}
+p ~ ul {
+    background: green;  //Set a background color for all <ul> elements that are preceded by a <p> element with the same parent
+}
+li[target] { 
+    background-color: yellow; //Style all <li> elements with a target attribute
+}
+li[target=blank] { 
+    background-color: yellow;  //Style <li> elements with a target="blank"
+}
+[title~=flower] {
+    border: 5px solid yellow;  //Select and style elements with a title attribute containing the word "flower"
+}
+[lang|=en] {
+    background: yellow; //Select and style elements, where the lang attribute's value starts with "en"
+}
+div[class^="intro"] {
+    background: green;  //Set a background color on all <div> elements that have a class attribute value that begins with "intro"
+}
+div[class$="intro"] {
+    background: green; //Set a background color on all <div> elements that have a class attribute value that ends with "intro"
+}
+div[class*="intro"] {
+    background: green; //Set a background color on all <div> elements that have a class attribute value that ends with "intro"
+}
+a:active{
+	background-color: yellow;   //Select and style the active link
+}
+p::after {
+    content: " - SUNIL";  //Insert some text after the content of each <p> element
+}
+p::before { 
+    content: " kotala "; //Insert some text before the content of each <p> elemen
+}
+input:checked {
+    height: 50px;  //Set the height and width for all checked <input> elements
+    width: 50px;   //The :checked selector matches every checked <input> element 
+
+}
+input[type=text]:disabled {
+    background: #dddddd;    //Set a background color for all disabled input elements of type="text"&&& The :disabled selector matches every disabled element (mostly used on form elements)
+}
+p:empty {
+    width: 100px;
+    height: 20px;   	//Specify a background color for empty <p> elements
+    background: #ff0000;
+}
+input[type=text]:enabled {
+    background: red;		//Set a background color for all enabled <input> elements of type="text"
+}
+
+input[type=text]:disabled {
+    background: blue;			////Set a background color for all disabled <input> elements of type="text"
+}
+p:first-child {
+    background-color: yellow;  //The :first-child selector is used to select the specified selector, only if it is the first child of its parent
+}
+p::first-letter {
+    font-size: 200%;
+    color: red;    //Select and style the first letter of every <p> element
+}
+p::first-line { 
+    background-color: yellow;  //Select and style the first line of every <p> element
+}
+p:first-of-type {
+    background: red;  //Specify a background color for the first <p> element of its parent
+}
+input:focus {
+    background-color: yellow; //Select and style an input field when it gets focus
+}
+a:hover {
+    background-color: yellow;  //Select and style a link when you mouse over it
+}
+input:in-range {
+    border: 2px solid yellow;  //Select and style only if the value of the <input> element is "in range"
+}
+input:invalid {
+    border: 2px solid red;   //Select and style only if the value of the <input> element is invalid
+}
+p:lang(it) {
+    background: yellow;  //Select and style every <p> element with a lang attribute value equal to "it" (Italian)
+}
+p:last-child {
+    background: pink;  //Specify a background color for the <p> element that is the last child of its parent
+}
+p:last-of-type {
+    background: green;   //The :last-of-type selector matches every element that is the last child, of a particular type, of its parent.
+}
+a:link {
+    background-color: skyblue;   //The :link selector is used to select unvisited links
+}
+p {
+    color: green;
+}
+
+:not(p) {
+    color: red;   ///The :not(selector) selector matches every element that is NOT the specified element/selector
+}
+p:nth-child(2) {
+    background: red;  // The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.
+}
+p:nth-last-child(2) {
+    background: red;   //
+Specify a background color for every <p> element that is the second child of its parent, counting from the last child.
+}
+p:nth-last-of-type(2) {
+    background: red;   //Specify a background color for every <p> element that is the second p element of its parent, counting from the last child
+}
+p:nth-of-type(2) {
+    background: red;  //Specify a background color for every <p> element that is the second p element of its parent
+}
+p:only-of-type {
+    background-color: pink;  //Specify a background color for every <p> element that is the only child of its type, of its parent
+}
+p:only-child {
+    background: pink;  //Specify a background color for every <p> element that is the only child of its parent.
+}
+input:optional {
+    background-color: yellow;  //Select and style only if the <input> element does not have a "required" attribute
+}
+input:out-of-range { 
+    border: 2px solid red;  //Select and style only if the value of the <input> element is "out of range"
+}
+input:-moz-read-only { 
+    background-color: yellow;
+}
+							//Select and style only if the input element is "readonly"
+input:read-only {
+    background-color: yellow;
+}
+input:-moz-read-write {
+    background-color: yellow;
+}
+								//Select and style only if the input element is not "readonly"
+input:read-write { 
+    background-color: yellow;
+}
+input:required {
+    background-color: yellow;  //Select and style only if the <input> element has a "required" attribute
+}
+:root {
+    background: pink;   //Set the background color for the HTML document
+}
+::-moz-selection {
+    color: red;
+    background: yellow;
+}
+
+::selection {
+    color: red;
+    background: yellow;            //The ::selection selector matches the portion of an element that is selected by a user.
+}
+input:valid {
+    background-color: yellow;     //The :valid selector selects form elements with a value that validates according to the element's settings.
+}
+a:visited {
+    color: pink;            //The :visited selector is used to select visited links.
+}*/
+</style>
+</head>
+<body>
+
+<h1>Welcome</h1>
+
+<div class="intro">Div
+  <p id="fname">p1</p>
+  <p id="lname">p2</p>
+</div>
+<img src="klematis.jpg" title="klematis flower">
+<p>
+	<ul>
+		<li target="blank">l1</li>
+		<li target="top">l2</li>
+		<li>l3</li>
+	</ul>
+</p>
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<p lang="en-gb">Ello!</p>
+<p lang="us">Hi!</p>
+<p lang="no">Hei!</p>
+
+<a href="http://www.w3schools.com">w3schools.com</a>
+<a href="http://www.wikipedia.org">wikipedia.org</a>
+
+
+<form action="">
+  <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+  <input type="radio" value="female" name="gender"> Female<br>
+  <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+  <input type="checkbox" value="Car"> I have a car
+</form>
+
+<p></p>
+
+<form action="">
+First name: <input readonly type="text" value="Sunil"><br>
+Last name: <input type="text" value="kottala"><br>
+Country: <input type="text" disabled="disabled" value="India">
+</form>
+
+<input type="number" min="100" max="7662" value="155">
+
+<p>I live in Italy.</p>
+<div lang="it">
+	<p>SUCK!S</p>
+Ciao bella!</div>
+<p>An optional input element:<br><input></p>
+<p>A required input element:<br><input required></p>
+
+
+</body>
+</html>
