@@ -1,0 +1,117 @@
+1. arr.forEach():
+
+	foreach executes the given function for every element in the array.
+ syntax: arr.forEach(callback[,thisArg])
+
+ callback is used as a call back function which executes the three arguments.they are currentvalue,index&array.
+ this forEach() execute the callback once for each element present in the array.
+
+ arr.map():
+   map() is a method which creates a new array with the results of calling a provided function on every element in this array.
+  Systax: var new_array=arr.map(callback[,this Arg])
+
+  Diff b/w .forEach()&.map():
+  map() returns an array while forEach() doesnot return any array.
+  forEach() performs action to each element in the original array whereas map() performs an action to each element as well but emitting result as a new array.there is no change in the original array in map().
+
+ 2. 
+ object: An object is a collection of properties.Each property is associated with a name and a value. a property value can be a function.
+ we can define our own objects and their properties,functions and methods too.
+ Object methods:
+ arr.length-- used to know the length of the array.
+ --pop() --method removes the last element from an array.
+ --push() --method adds a new element to an array (at the end).	--shift() --method removes the first array element and shifts all other elements to a lower index.
+ --unshift() --method adds a new element to an array (at the beginning), and "unshifts" older elements.
+ --splice() --method can be used to add new items to an array.	--concat() --method creates a new array by concatenating two arrays.
+ --slice() --method slices out a piece of an array into a new array.
+ --sort() --method sorts an array alphabetically.
+ --reverse() --method reverses the elements in an array.
+  .indexOf(value)
+  -- to find the first occurance of the value in array.
+
+  .lastIndexOf(value)
+  --- to find the last occurance of the value in the array and return the index.
+
+ 3. diff ways of creating object:
+
+ 	1.
+var o = {}; //empty object.
+
+var o = {
+          property1: value,
+          property2: value,
+          property4: value,    //object with properties.
+          property5: value,
+        };
+4.
+properties of object:
+
+1.Accessing the property:
+we can access these properties by using:
+
+Syntax:
+objectName.propertyName
+
+2.Updating the property:
+for Updating a property value:
+
+Syntax:
+objectName.existingPropertyName : newvalue;
+
+3.Adding a new Property:
+for Adding a property value:
+
+Syntax:
+objectName.NewProperty: value;
+
+4.Deleting a Property:
+for Deleting a property
+
+Syntax:
+delete objectName.PropertyName;
+
+5.property Exists?
+to know if a property exists are not?
+
+6.
+Syntax:
+objectName.hasOwnProperty('PropertyName')
+
+7.window
+window is the global object
+all the variable declared outside a function is refer to a window.
+
+ decscription for the property.
+8.define property:
+to define a object property we use defineProperty
+
+syntax:
+object.defineProperty(obj,property,decsriptor);
+
+parameters:
+
+obj:
+ the object on which to define the property.
+
+ property:
+ name of the property to be defined.
+
+ descriptor:
+
+ 5.prototype:
+
+ 	--Every JavaScript object has a prototype. The prototype is also an object.
+
+    --All JavaScript objects inherit their properties and methods from their prototype.
+
+  JavaScript Prototypes:
+
+	--All JavaScript objects inherit the properties and methods from their prototype.
+
+    --Objects created using an object literal, or with new Object(), inherit from a prototype called Object.prototype.
+
+	--Objects created with new Date() inherit the Date.prototype.
+
+	--The Object.prototype is on the top of the prototype chain.
+
+	--All JavaScript objects (Date, Array, RegExp, Function, ....) inherit from the Object.prototype.

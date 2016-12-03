@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body bgcolor="#ccc">
+
+	<script >
+		var arr = ["a", "b", "c"];
+		arr.forEach(function(i) {
+        console.log(i);
+       });
+		arr.map(function(i) {
+  		console.log(i);
+		});
+	</script>
+	
+	<script>
+		var x = {
+    		y: 10
+				};
+		console.log(x.hasOwnProperty("y")); 
+		console.log(x.hasOwnProperty("z"));
+	</script>
+	
+	<p>Creating Object</p>
+	
+	 <script>
+		var a={};
+		var person={
+			fname:"sunil",
+			lname:"kotala",
+			age:23
+		};
+		console.log(a);
+		console.log(person);
+		person.nation="indian"; //adding a property
+		
+		person.age=22;  //updating a property
+		
+		delete person[age];  //deleting the propert age
+
+		person.fname; //checking if property exists
+
+
+	</script>
+
+	<p>PROTOTYPE</p>
+	<p id=demo></p>
+
+	<script>
+		function Person(first, last, age, eyecolor) { //creating a prototype
+		    this.firstName = first;
+		    this.lastName = last;
+		    this.age = age;
+		}
+		person.prototype.color="white"; //adding a new property to the prototype
+
+		Person.prototype.name = function() {
+    			return this.firstName + " " + this.lastName;   //adding method to the prototype
+				};
+
+		var myFather = new Person("narsa", "reddy", 45);  //creating two objects in the prototype
+		var myMother = new Person("rajavva", "reddy", 39);
+
+
+		myFather.nation="indian";  //adding a new property to the object
+		
+		myFather.name = function() {
+ 			return this.firstName + " " + this.lastName;  //adding a method to the object in prototype
+			};
+
+	</script>
+
+</body>
+</html>
