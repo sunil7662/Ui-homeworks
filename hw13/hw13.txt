@@ -1,0 +1,20 @@
+call,apply&bind:
+
+Call invokes the function and allows you to pass in arguments one by one. it executes immediately.
+
+Apply invokes the function and allows you to pass in arguments as an array. It also executes immediately.
+
+Bind returns a new function, allowing you to pass in a this array and any number of arguments. It first creates a bound function and in that function we can give the arguments.
+
+Syntax:
+
+	     var obj={num:2};
+
+		 var functionname = function(arg1,arg2,arg3){
+
+		 };
+		 functionname.call(obj,arg1,arg2,arg3);
+		 functionname.apply(obj,arg1,arg2,arg3);
+		 
+		 var bound = functionname.bind(obj);
+		 bound(arg1,arg2,arg3);
