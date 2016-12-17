@@ -7,3 +7,9 @@
 
 3> what is $?
    --The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s). Basic syntax is: $(selector).action() A $ sign to define/access jQuery. A (selector) to "query (or find)" HTML elements. A jQuery action() to be performed on the element(s)   
+4> 
+	The difference are:
+
+	$(document).ready(function() is jQuery event that is fired when DOM is loaded, so it’s fired when the document structure is ready.
+
+	$(window).load() event is fired after whole content is loaded.
