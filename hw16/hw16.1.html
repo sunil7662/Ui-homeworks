@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute Selectors</title>
+	<style>
+  h3 {
+    margin: 0;
+  }
+  div, span, p {
+    width: 100px;
+    height: 40px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    background-color: #CCC;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+<a href="example.html" hreflang="en">Some text</a>
+<a href="example.html" hreflang="en-UK">Some other text</a>
+<a href="example.html" hreflang="english">will not be outlined</a>
+
+
+<input id="myId" name="man-news">
+<input id="myId" name="milk man">
+<input name="letter man2">
+<input name="newsmilk">
+<input name="jobletter">
+<div><input type="radio" name="newsletter" value="SUNIL"></div>
+<script>
+	
+$( "a[hreflang|='en']" ).css( "border", "3px soild green" );   // attributeContainsPrefix selector Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
+
+$( "input[name*='man']" ).val( "has man in it!" );  // attributeContains selector Selects elements that have the specified attribute with a value containing a given substring.
+
+$( "input[name~='man']" ).val( "mr. man is in it!" );  // attributeContainsWord selector Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
+
+
+$( "input[name$='letter']" ).val( "a letter" );  //attributeEndsWith selector Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.
+
+$( "input[value='SUNIL']" ).next().text( "SUNIL" );     //attributeEquals selector Selects elements that have the specified attribute with a value exactly equal to a certain value 
+
+
+$( "input[name!='newsletter']" ).next().append( "<b>; SUNILREDDY</b>" ); //attributeNotEqual selector Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.
+
+$( "input[name^='news']" ).val( "news here!" );    //attributeStartsWith selector Selects elements that have the specified attribute with a value beginning exactly with a given string.
+
+$( "div" ).css( "border", "3px solid yellow" );   // attributeHas selector Selects elements that have the specified attribute, with any value.
+
+$( "input[id][name$='man']" ).val( "only this one" );  // attributeMultiple selector Matches elements that match all of the specified attribute filters.
+</script>
+</body>
+</html>

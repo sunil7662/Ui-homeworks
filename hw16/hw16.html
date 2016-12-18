@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Basic Selectors in jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+<div id="myDiv">DIV</div>
+<span>SPAN</span>
+<p>P <button>Button</button></p>
+
+<div class="notMe">div class="notMe"</div>
+<div class="myClass">div class="myClass"</div>
+<span class="myClass">span class="myClass"</span> 
+ 
+<script>
+ 
+var elementCount = $( "*" ).css( "border", "3px solid red" ).length;   // * selects all elements in the page.
+$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
+
+$( ".myClass" ).css( "border", "3px solid red" );    //class selector Selects all elements with the given class.
+
+$( "div" ).css( "border", "9px solid blue" );      // element selector Selects all elements with the given tag name.
+
+
+$( "#myDiv" ).css( "border", "3px solid green" );    //id selector Selects a single element with the given id attribute.
+
+$( "div, span, p" ).css( "border", "3px solid yellow" );  //multiple selector Selects the combined results of all the specified selectors */
+
+</script>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,23 @@
+ Basic Selectors in jQuery:
+
+-- * selects all elements in the page.
+-- class selector Selects all elements with the given class.
+-- element selector Selects all elements with the given tag name.
+-- id selector Selects a single element with the given id attribute.
+-- multiple selector Selects the combined results of all the specified selectors 
+
+Attribute Selectors:
+
+-- attributeContainsPrefix selector Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
+-- attributeContains selector Selects elements that have the specified attribute with a value containing a given substring.
+-- attributeContainsWord selector Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
+-- attributeEndsWith selector Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.
+-- attributeEquals selector Selects elements that have the specified attribute with a value exactly equal to a certain value.
+-- attributeNotEqual selector Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.
+-- attributeStartsWith selector Selects elements that have the specified attribute with a value beginning exactly with a given string.
+-- attributeHas selector Selects elements that have the specified attribute, with any value.
+-- attributeMultiple selector Matches elements that match all of the specified attribute filters.
+
+Basic Filter:
+
+-- 
