@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<script>
+     var data = {
+     	name : 'SUNIL',
+     	age : 22
+     }
+	$.ajax({
+		url : 'http://rest.learncode.academy/api/johnbob/friends/5852bae04c920201009b6f37',
+		method : 'PUT',
+		data : data,
+		success : function(data) {
+			console.log(data);
+		},
+		error : function(xhr){
+			console.log(xhr)
+		}
+	})
+</script>
+
+</body>
+</html>
