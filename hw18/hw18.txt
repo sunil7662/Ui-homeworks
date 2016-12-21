@@ -1,0 +1,55 @@
+Status codes:
+
+200 (OK) - The Request was successful. For a GET request, the response contains an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.
+
+201 (Created) - Returned only for POST requests that create repository items. The request was successful and the repository item was created.
+
+
+300 Multiple Choice
+The request has more than one possible responses. User-agent or user should choose one of them. There is no standardized way to choose one of the responses.
+301 Moved Permanently
+This response code means that URI of requested resource has been changed. Probably, new URI would be given in the response.
+302 Found
+This response code means that URI of requested resource has been changed temporarily. New changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.
+303 See Other
+Server sent this response to directing client to get requested resource to another URI with an GET request.
+304 Not Modified
+This is used for caching purposes. It is telling to client that response has not been modified. So, client can continue to use same cached version of response.
+305 Use Proxy
+This means requested response must be accessed by a proxy. This response code is not largely supported because security reasons.
+306 unused
+This response code is no longer used, it is just reserved currently. It was used in a previous version of the HTTP 1.1 specification.
+307 Temporary Redirect
+Server sent this response to directing client to get requested resource to another URI with same method that used prior request. This has the same semantic than the 302 Found HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.
+308 Permanent Redirect
+This means that the resource is now permanently located at another URI, specified by the Location: HTTP Response header. This has the same semantics as the 301 Moved Permanently HTTP response code, with the exception that the user agent must not change the HTTP method used: if a POST was used in the first request, a POST must be used in the second request.
+400 (Bad Request) - The request could not be completed because the request URL and/or parameters were improperly formatted.
+
+401 (Unauthorized) - user session does not have the proper security credentials to execute the method, property, or access the repository for the requested resource.
+
+403 (Forbidden) – The specified property has been configured as not writable via the filtering configuration.
+
+404 (Not Found) - The request could not be completed because it was made for a resource which does not exist.
+
+410 (Gone) - Returned only for DELETE requests that remove repository items. The request was successful and the repository item was deleted.
+
+500 (Internal server error) - The request could not be completed because an unexpected exception occurred.
+
+
+AngularJS: 
+	--AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with additional attributes and makes it more responsive to user actions.
+
+AngularJs MVC: 
+	--Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts −
+
+	--Model − It is the lowest level of the pattern responsible for maintaining data.
+
+	--View − It is responsible for displaying all or a portion of the data to the user.
+
+	--Controller − It is a software Code that controls the interactions between the Model and View.
+
+AngularJs MVVM:
+	--MVVM is used for the simplification of Presentation Separation. In the MVVM, the logic is stored in the presenter and the View is completely isolated from the Model. While the presenter isn’t aware of the View, the View is aware of the presenter – the presenter in MVVM is used to represent an abstract view of the user interface. A passive view means that the View doesn’t have any knowledge of the Model. In the MVVM design pattern, the View is active and contains behaviors, events and data binding information. Note that the view in MVVM is not responsible for managing the state information – the view is rather synchronized with the View Model. The ViewModel in MVVM is responsible for presentation separation and exposes methods and commands to manage the state of a view and manipulate the Model.
+
+Data Binding:
+	--Data-binding in Angular apps is the automatic synchronization of data between the model and view components. The way that Angular implements data-binding lets you treat the model as the single-source-of-truth in your application. The view is a projection of the model at all times.
