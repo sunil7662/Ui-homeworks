@@ -1,0 +1,19 @@
+1.
+	--One way data binding in AngularJS means binding data from Model to View.
+	--Two way data binding in AngularJS means binding data from Model to View and vice versa.
+
+2.
+	--You can have multiple controllers, but you cannot have multiple ng-app directives on the same page. This means you should only have a single ng-app directive in your html that points to a single module that will be used in your application.
+
+3.
+	--The ng-app directive defines an AngularJS application.
+	--The ng-model directive binds the value of HTML controls to application data.
+	--The ng-bind directive binds application data to the HTML view.
+	--The ng-init directive allows you to evaluate an expression in the current scope.
+
+4.{{}}: the statement inside the double brackets is executed.
+		AngularJS expressions can be written inside double braces.
+		--Ex; { 5 + 5 }} or {{ firstName + " " + lastName }}
+
+5. 
+	--ngClick directive allows you to specify custom behavior when an element is clicked.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+</head>
+<body ng-app>
+<div ng-controller="sunil">
+{{message}} </br>
+    Enter the first name: <input ng-model="firstName">  </br>
+	show first name : <span ng-bind="firstName"></span> </br>	
+</div>
+<div ng-controller="kottala">
+	{{message}} </br>
+	Enter the last name: <input ng-model="lastname">  </br>
+	show last name : <span ng-bind="lastName"></span> </br>
+</div>
+<script language="javascript">
+	function sunil($scope) {
+		$scope.message = "Hi man";
+		$scope.firstname;
+	}
+	function kottala($scope){
+		$scope.message = "How are you doing today";
+		$scope.lastname;
+	}
+</script>
+</body>
+</html>
