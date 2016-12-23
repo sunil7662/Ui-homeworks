@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+a.highlight:hover {
+    color: #ff0000;
+} 
+.div1 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+}
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    color: green;
+    text-decoration: none;
+    padding: 3px; 
+    display: block;
+}
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    ul li a {
+        padding-left: 30px;
+        background: url(email-icon.png) left center no-repeat;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    ul li a:before {
+        content: "Email: ";
+        font-style: italic;
+        color: #666666;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    ul li a:after {
+        content: " (" attr(data-email) ")";
+        font-size: 12px;
+        font-style: italic;
+        color: #666666;
+    }
+}
+.a1{
+        visibility: hidden;
+}
+.a2{
+        display: block;
+}
+.a3{
+        display: inline;
+}
+</style>
+</head>
+<body>
+
+<h1>Resize the browser window to see the effect!</h1>
+<p>Hi!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+How are you man??????????????</p>
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+<p><a href="default.asp">CSS Tutorial</a></p>
+<div class="div1">Sunil Reddy</div>
+
+<ul>
+  <li><a data-email="sunil@example.com" href="mailto:sunil@example.com">Sunil</a></li>
+  <li><a data-email="reddy@example.com" href="mailto:reddy@example.com">Reddy</a></li>
+  <li><a data-email="kottala@example.com" href="mailto:kottala@example.com">Kottala</a></li>
+</ul>
+
+<a class="a1" href="http://starsunfolded.1ygkv60km.netdna-cdn.com/wp-content/uploads/2016/01/Kajal-Aggarwal.jpg">Hidden</a>
+<a class="a2" href="http://cdn2.stylecraze.com/wp-content/uploads/2013/07/kajal-agarwal-photos.jpg">Block</a>
+<a class="a3" href="http://media.santabanta.com/gallery/indian%20%20celebrities(f)/kajal%20agarwal/kajal-agarwal-158-v.jpg">Inline</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+PseudoClass:
+	--A pseudo-class is used to define a special state of an element.
+PseudoElement:
+	--A pseudo-element is used to style specified parts of an element.
+
+Media Queries:
+	--Media queries can be used to check many things, such as:
+		width and height of the viewport
+		width and height of the device
+		orientation (is the tablet/phone in landscape or portrait mode?)
+		resolution
+
+CSS box model,box-size,display properties:
+	--CSS3 box-sizing property allows us to include the padding and border in an element's total width and height.
+	--Content - The content of the box, where text and images appear.
+	--Padding - Clears an area around the content. The padding is transparent.
+	--Border - A border that goes around the padding and content.
+	--Margin - Clears an area outside the border. The margin is transparent.
+	--The box model allows us to add a border around elements, and to define space between elements. 
+
+differences between display none and visibility hidden property:
+	--visibility:hidden hides the element, but it still takes up space in the layout.
+	--display:none removes the element from the document. It does not take up any space.
